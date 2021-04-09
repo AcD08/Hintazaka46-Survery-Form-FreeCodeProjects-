@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hinatazaka46 Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1 id="title">Hinatazaka46 Survey Form</h1>
+        <p id="description">Thank you for your time to fill up Hinatazaka46's survey form.</p>
+
+        <form id="survey-form">
+            <div class="form-group">
+                <label for="email" id="name-label">Name</label>
+                <input type="text" name="name" id="name" placeholder="Enter Your Name Here" required>
+            </div>
+            <div class="form-group">
+                <label for="email" id="email-label">Email</label>
+                <input type="email" name="email" id="email" placeholder="Input Your Email Here" required>
+            </div>
+            <div class="form-group">
+                <label for="age" id="number-label">Age (Optional)</label>
+                <input type="number" id="number" name="age" id="age" placeholder="Your Age" min="12" max="60">
+            </div>
+            <div class="form-group">
+                <label for="generation" id="gen-label">Which gen do you think is best?</label>
+                <select name="gen" id="dropdown" required>
+                    <option disabled selected value>Select your fav gen</option>
+                    <option value="gen1">Generation 1</option>
+                    <option value="gen2">Generation 2</option>
+                    <option value="gen3">Generation 3</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="single" id="single-label">Which single(s) do you like?</label>
+                <label ><input name="single" id="single" value="kyun" type="radio" class="input-radio">1st single - Kyun</label>
+                <label ><input name="single" id="single" value="kyun" type="radio" class="input-radio">2nd single - Doremisolasido</label>
+                <label ><input name="single" id="single" value="kyun" type="radio" class="input-radio">3rd single - Konna ni suki nachatte ii no?</label>
+                <label ><input name="single" id="single" value="kyun" type="radio" class="input-radio">4th single - Sonna koto nai yo</label>
+                <label ><input name="single" id="single" value="kyun" type="radio" class="input-radio">5st single - Kimi shika kattan</label>
+            </div>
+            <div class="form-group">
+                <label for="cute-member" id="cute-label">Which one member do you think is cute?</label>
+                <label ><input name="single1" id="single" value="kyun" type="checkbox" class="input-radio" value="Kosaka Nao">Kosaka Nao</label>
+                <label ><input name="single2" id="single" value="kyun" type="checkbox" class="input-radio" value="Kanemura Miku">Kanemura Miku</label>
+                <label ><input name="single3" id="single" value="kyun" type="checkbox" class="input-radio" value="Yamaguchi Haruyo">Yamaguchi Haruyo</label>
+                <label ><input name="single4" id="single" value="kyun" type="checkbox" class="input-radio" value="Takahashi Mikuni">Takahashi Mikuni</label>
+                <label ><input name="single5" id="single" value="kyun" type="checkbox" class="input-radio" value="Saito Kyoko">Saito Kyoko</label>
+            </div>
+            <div class="form-group">
+                <label for="suggest" id="suggest-label">Any suggestions for Hinatazkaa46?</label>
+                <textarea name="comment" id="comment" class="input-textarea"></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" id="submit" class="submit-button">Submit</button>
+            </div>
+        </form>
+    </div>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
